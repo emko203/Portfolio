@@ -16,10 +16,15 @@
 .navbar{
     position: fixed;
     width: 100%;
-    padding: 15px 0;
-    background:  #663366;
+    padding: 30px 0;
     font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
 } 
+
+.navbar.sticky{
+    padding: 30px 0;
+    background:  #8284d9;
+}
 
 .navbar .max-width{
     display: flex;
@@ -34,6 +39,15 @@
     font-weight: 600;
 }
 
+.navbar .logo a span{
+    color:#8284d9;
+    transition: all 0.3s ease;
+}
+
+.navbar.sticky .logo a span{
+    color:#fff;
+}
+
 .navbar .menu li{
     list-style: none;
     display: inline-block;
@@ -44,4 +58,99 @@
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
+    transition: color 0.3s ease;
+}
+
+.navbar .menu li a:hover{
+    color: #8284d9;
+}
+
+.navbar.sticky .menu li a:hover{
+    color: #fff;
+}
+
+/* menu btn styling */
+
+.menu-btn{
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+/* home section styling */
+
+.home{
+    display:flex;
+    background: url("images/background.jpg") no-repeat center;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.home .max-width{
+    margin: auto 0 auto 40px;
+}
+
+.home .home-content .textline-a{
+    font-size: 27px;
+}
+
+.home .home-content .textline-b{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+
+.home .home-content .textline-c{
+    font-size: 40px;
+    margin: 5px 0;
+}
+
+.home .home-content .textline-c span{
+    color: #8284d9;
+    font-weight: 500;
+}
+
+/* responsive media quesry start */
+@media (max-width: 947px){
+    .max-width{
+        padding: 0 50px;
+    }
+
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+
+    .menu-btn i.active::before{
+        content: "\f00d";
+    }
+
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+
+    .navbar .menu.active{
+        left: 0;
+    }
+
+    .navbar .menu li{
+        display: block;
+    }
+
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
 }

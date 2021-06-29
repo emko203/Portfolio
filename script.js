@@ -14,3 +14,19 @@ $(document).ready(function() {
 		$('.menu-btn i').toggleClass('active');
 	});
 });
+
+function about() {
+	$('.about').get(0).scrollIntoView();
+}
+
+function skills() {
+	$('.skills').get(0).scrollIntoView();
+}
+
+function projects() {
+	$('.projects').get(0).scrollIntoView();
+}
+
+function contact() {
+	$('.contact').get(0).scrollIntoView();
+}

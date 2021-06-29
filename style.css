@@ -129,7 +129,6 @@
 
 .home .home-content a:hover{
     color: #fff;
-    /* background: none; */
     opacity: 0.8;
     
 }
@@ -581,6 +580,22 @@ section{
 .contact .right form .button button:hover{
     color: #fff;
     opacity: 0.8;
+}
+
+.scroll-up-btn{
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: #8284d9;
+    right: 30px;
+    bottom: 30px;
+    text-align: center;
+    line-height: 45px;
+    color: #FFF;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 6px;
+    cursor: pointer;
 }
 
 /* responsive media quesry start */

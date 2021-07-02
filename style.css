@@ -516,6 +516,14 @@ section{
     color: #8284d9;
 }
 
+.contact .contact-content .row i:hover{
+    color: #fff;
+}
+
+.contact .contact-content .row a{
+    color: #FFF;
+}
+
 .contact .contact-content .info .head{
     font-weight: 500;
 }

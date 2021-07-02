@@ -6,6 +6,10 @@
     text-decoration: none;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 .max-width{
     max-width: 1300px;
     padding: 0 80px;
@@ -65,10 +69,12 @@
 
 .navbar .menu li a:hover{
     color: #8284d9;
+    cursor: pointer;
 }
 
 .navbar.sticky .menu li a:hover{
     color: #fff;
+    cursor: pointer;
 }
 
 /* menu btn styling */
@@ -211,7 +217,7 @@ section{
     text-align: justify;  
 }
 
-.about .about-content .right a{
+.about .about-content .right button{
     display: inline-block;
     background: #8284d9;
     color: #fff;
@@ -224,7 +230,7 @@ section{
     transition: all 0.3s ease;
 }
 
-.about .about-content .right a:hover{
+.about .about-content .right button:hover{
     color: #8284d9;
     background: none;
     /* opacity: 0.8; */
@@ -582,20 +588,25 @@ section{
     opacity: 0.8;
 }
 
-.scroll-up-btn{
+.modal{
+    display: none;
+    justify-content: center;
+    align-items: center;
     position: fixed;
-    height: 45px;
-    width: 42px;
-    background: #8284d9;
-    right: 30px;
-    bottom: 30px;
-    text-align: center;
-    line-height: 45px;
-    color: #FFF;
-    z-index: 9999;
-    font-size: 30px;
-    border-radius: 6px;
-    cursor: pointer;
+    z-index: 1001;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+.modal-content{
+    height: 95%;
+    width: 80%;
+    background-color: #fcfbfe;
+    margin: 15% auto;
 }
 
 /* responsive media quesry start */

@@ -11,10 +11,6 @@
 </head>
 <body>
 
-    <div class="scroll-up-btn">
-        <i class="fas fa-angle-up"></i>
-    </div>
-
     <!--Nav Bar-->
     <nav class="navbar">
         <div class="max-width">
@@ -41,7 +37,7 @@
                 <div class="textline-a">Welcome to</div>
                 <div class="textline-b">Emanuil Karapachov's</div>
                 <div class="textline-c"><span>Portfolio</span></div>
-                <a href="#">Contact me</a>
+                <a onclick="contact()">Contact me</a>
             </div>
         </div>
     </section>
@@ -52,14 +48,14 @@
             <h2 class="title">About me</h2>
             <div class="about-content">
                 <div class="column left">
-                    <img src="images/profile.jpg" alt="">
+                    <img src="images/moi.jpg" alt="">
                 </div>
                 <div class="column right">
                     <div class="text">
-                        My name is Emanuil and I am an <span>ICT Student</span>
+                        Welocme to my <span>Portfolio</span>
                     </div>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi quis id perferendis temporibus, iure explicabo praesentium adipisci eligendi, quasi alias quas nam, a inventore blanditiis nemo impedit ullam magni hic sit quibusdam odio dicta fugit nihil. Architecto aperiam nostrum, magnam veritatis explicabo sapiente. Iste natus, odio quia molestias fugit a expedita aut, ratione, veniam voluptatum deleniti dolorem quis deserunt sint?</p>
-                    <a href="#">View CV</a>
+                    <p>My name is Emanuil Karapachov and I am from Varna, Bulgaria. Currently, I am an ICT & Software student in Fontys University of Applied Science in Eindhoven. From a young age, I consider myself a team-player, which is why I am always eager to work in team environments. Furthermore, I always feel ready to develop new skills and grow knowledge by gaining practical experience.</p>
+                    <button onclick="showCV()">View CV</button>
                 </div>
             </div>
         </div>
@@ -117,25 +113,31 @@
             <div class="projects-content">
                 <div class="card">
                     <div class="box">
-                        <i class="fab fa-react"></i>
-                        <div class="text">Webstore</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, aperiam? Quam eius accusamus doloribus amet.</p>
+                        <a href="https://github.com/emko203/Webstore">
+                            <i class="fab fa-react"></i>
+                        </a>
+                        <div class="text">The Webstore</div>
+                        <p>An e-commerce store built in React using Java back-end and socket.io for real time chat communication. </p>
                     </div>
                 </div>
 
                 <div class="card">
                     <div class="box">
-                        <i class="fab fa-unity"></i>
+                        <a href="https://github.com/emko203/PixelWars">
+                            <i class="fab fa-unity"></i>
+                        </a>
                         <div class="text">Pixel Wars</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, aperiam? Quam eius accusamus doloribus amet.</p>
+                        <p>A fast paced local multiplayer auto-battler game built in Unity using C#</p>
                     </div>
                 </div>
 
                 <div class="card">
                     <div class="box">
-                        <i class="fas fa-code"></i>
-                        <div class="text">Placeholder</div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, aperiam? Quam eius accusamus doloribus amet.</p>
+                        <a href="https://github.com/emko203">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <div class="text">GitHub</div>
+                        <p>You can find more of my personal projects and projects to which I have contributed on my GitHub</p>
                     </div>
                 </div>
             </div>
@@ -149,12 +151,14 @@
             <div class="contact-content">
                 <div class="column left">
                     <div class="text">Get in Touch</div>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia non sequi sunt! Officiis rerum consectetur dolorem cumque quae facilis quam.</p>
+                    <p>If you wish to contact me you could directly send an email from this portfolio, or you can reach me through my LinkedIn</p>
                     <div class="icons">
                         <div class="row">
-                            <i class="fas fa-user"></i>
+                            <a href="https://www.linkedin.com/in/emanuil-karapachov-735695214/">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
                             <div class="info">
-                                <div class="head">Name</div>
+                                <div class="head">Linkedin</div>
                                 <div class="sub-title">Emanuil Karapachov</div>
                             </div>
                         </div>
@@ -193,6 +197,13 @@
             </div>
         </div>
     </section>
+
+    <div id="cvDIV" class="modal">
+        <div class="modal-content">
+            <iframe src="docs/Emanuil_Karapachov_Resume.PDF" frameBorder=0 width="100%" height="100%"></iframe>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </DOCTYPE>

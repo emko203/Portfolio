@@ -1,7 +1,7 @@
 const nameInput = $('#name');
 const emailInput = $('#email');
 const subjectInput = $('#subject');
-const messageInput = $('#message');
+const messageInput = $('#msg');
 
 let name = sessionStorage.getItem('name');
 let email = sessionStorage.getItem('email');

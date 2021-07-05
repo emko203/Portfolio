@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Emanuil-Karapachov's Portfolio",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emko203/portfolio.git"
+  },
+  "author": "Emanuil Karapachov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emko203/portfolio/issues"
+  },
+  "homepage": "https://github.com/emko203/portfolio#readme"
+}

@@ -524,6 +524,10 @@ section{
     color: #FFF;
 }
 
+.contact .contact-content .row a:hover{
+    color: #8284d9;
+}
+
 .contact .contact-content .info .head{
     font-weight: 500;
 }
